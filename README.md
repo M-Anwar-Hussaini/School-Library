@@ -26,7 +26,7 @@
 
 # 📖 [School Library] <a name="about-project"></a>
 
-**[School Library]** is a Ruby-based project that embodies the principles of Object-Oriented Programming to create an efficient and organized library system for a school. The project is structured around the implementation of three main classes: Person, Student, and Teacher. These classes are designed to demonstrate the core OOP concepts of polymorphism, inheritance, abstraction, and encapsulation.
+**School Library** is a Ruby-based project that embodies the principles of Object-Oriented Programming to create an efficient and organized library system for a school. The project is structured around the implementation of three main classes: Person, Student, and Teacher. These classes are designed to demonstrate the core OOP concepts of polymorphism, inheritance, abstraction, and encapsulation.
 
 
 
@@ -99,7 +99,7 @@ To get a local copy up and running, follow these steps:
 
 1. **Clone the Repository:**
    Open your terminal or command prompt and navigate to the directory where you want to store the local copy of the repository. Then, use the `git clone` command followed by the repository URL to clone it:
-   
+
 ```sh
 git clone https://github.com/M-Anwar-Hussaini/School-Library
 ```
