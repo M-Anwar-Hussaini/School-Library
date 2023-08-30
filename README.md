@@ -118,8 +118,8 @@ git clone https://github.com/M-Anwar-Hussaini/School-Library
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Use the "Decorator" design pattern.
-- [ ] Set up associations.
+- [x] Use the "Decorator" design pattern.
+- [x] Set up associations.
 - [ ] Add basic UI.
 - [ ] Refactor your code.
 - [ ] Preserve data.
