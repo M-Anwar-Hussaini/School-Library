@@ -83,9 +83,10 @@ end
 
 def print_rentals(rentals)
   print 'ID of person: '
-  puts 'Rentals: '
   id = gets.chomp.to_i
+  puts 'Rentals: '
   rentals.each do |rental|
     puts rental if rental.person.id == id
   end
+  puts
 end
