@@ -28,7 +28,7 @@ def main
     when 4 then books << create_book
     when 5 then rentals << create_rental(books, people)
     when 6 then print_rentals(rentals)
-    when 7 then break
+    when 7 then puts 'Thank you for using this app'
     else
       puts 'Wrong input value'
     end
