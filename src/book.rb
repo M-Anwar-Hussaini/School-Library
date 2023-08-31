@@ -17,4 +17,8 @@ class Book
     new_rental = Rental.new(date, self, person)
     @rentals << rental unless member?(new_rental)
   end
+
+  def to_s
+    "Title: \"#{title}\", Author: \"#{author}\""
+  end
 end
