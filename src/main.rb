@@ -13,29 +13,52 @@ def print_options
   print ': '
 end
 
-def process_choice(choice, books, people, rentals)
-  case choice
-  when 1 then print_elements(books)
-  when 2 then print_elements(people)
-  when 3 then people << add_person
-  when 4 then books << create_book
-  when 5 then rentals << create_rental(books, people)
-  when 6 then print_rentals(rentals)
-  when 7 then puts 'Thank you for using this app'
-  else
-    puts 'Wrong input value'
-  end
+def list_all_books(books)
+  print_elements(books)
+end
+
+def list_all_people(people)
+  print_elements(people)
+end
+
+def create_new_person(people)
+  people << add_person
+end
+
+def create_new_book(books)
+  books << create_book
+end
+
+def create_new_rental(books, people, rentals)
+  rentals << create_rental(books, people)
+end
+
+def list_all_rentals(rentals)
+  print_rentals(rentals)
 end
 
 def main
   books = []
   people = []
   rentals = []
-  number = 0
-  until number == 7
+
+  loop do
     print_options
     number = gets.chomp.to_i
-    process_choice(number, books, people, rentals)
+
+    case number
+    when 1 then list_all_books(books)
+    when 2 then list_all_people(people)
+    when 3 then create_new_person(people)
+    when 4 then create_new_book(books)
+    when 5 then create_new_rental(books, people, rentals)
+    when 6 then list_all_rentals(rentals)
+    when 7
+      puts 'Thank you for using this app'
+      break
+    else
+      puts 'Wrong input value'
+    end
   end
 end
 
